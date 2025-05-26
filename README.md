@@ -1,5 +1,5 @@
 # AnimeRecommender
-![Testo Alternativo](./img/intro-img.jpg)
+![Testo Alternativo](./img/anime-intro.jpg)
 
 - [AnimeRecommender](#animerecommender)
   - [Obiettivo](#obiettivo)
