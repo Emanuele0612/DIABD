@@ -104,7 +104,7 @@ Il sistema è composto da diversi componenti interconnessi che collaborano per f
    2. implementazione dell’algoritmo di content-based filtering per il calcolo della similarità tra anime;
    3. generazione delle raccomandazioni;
    4. caricamento dei dati nel database Neo4j.<br>
-   L'applicazione viene eseguita sul cluster Hadoop attraverso YARN e sfrutta il filesystem distribuito HDFS per l'accesso al dataset iniziale.
+L'applicazione viene eseguita sul cluster Hadoop attraverso YARN e sfrutta il filesystem distribuito HDFS per l'accesso al dataset iniziale.
 
 3. **Database Neo4j**: usato per l'archiviazione dei dati originali, delle raccomandazioni generate dal modello ALS e dei coefficienti di similarità calcolati dall’algoritmo di content-based filtering.
    - Facilita l'analisi delle relazioni tra utenti e anime.
