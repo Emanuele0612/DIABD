@@ -1,15 +1,15 @@
 # DIABD
-Obiettivo
-L'obiettivo principale del progetto è quello di creare un sistema di raccomandazione di anime efficiente e scalabile, in grado di fornire suggerimenti personalizzati agli utenti basati sulle loro preferenze e sulle caratteristiche degli anime stessi. A tale scopo sono state impiegate tecnologie per il calcolo distribuito (Hadoop e Spark) e Neo4j per la l’archiviazione e la visualizzazione dei dati su anime, utenti e loro relazioni risultanti dall’elaborazione.
-Inoltre, per facilitare l'accesso e l'esplorazione dei dati, è stata sviluppata un'interfaccia grafica semplice ed intuitiva, che consenta a chiunque di interagire con i dati relativi ad utenti, film e raccomandazioni, offrendo funzionalità di query del database predefinite ed eliminando la necessità di scrivere manualmente query Cypher.
-Dataset iniziale
-Il dataset utilizzato, disponibile al seguente link, comprende informazioni sugli anime, sugli utenti e sulle valutazioni date da questi utenti ad anime che hanno visto.
+## Obiettivo
+L'obiettivo principale del progetto è quello di creare un sistema di raccomandazione di anime efficiente e scalabile, in grado di fornire suggerimenti personalizzati agli utenti basati sulle loro preferenze e sulle caratteristiche degli anime stessi. A tale scopo sono state impiegate tecnologie per il calcolo distribuito (Hadoop e Spark) e Neo4j per la l’archiviazione e la visualizzazione dei dati su anime, utenti e loro relazioni risultanti dall’elaborazione.\
+Inoltre, per facilitare l'accesso e l'esplorazione dei dati, è stata sviluppata un'interfaccia grafica semplice ed intuitiva, che consenta a chiunque di interagire con i dati relativi ad utenti, film e raccomandazioni, offrendo funzionalità di query del database predefinite ed eliminando la necessità di scrivere manualmente query Cypher.\
+## Dataset iniziale
+Il dataset utilizzato, disponibile al seguente [link](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset), comprende informazioni sugli anime, sugli utenti e sulle valutazioni date da questi utenti ad anime che hanno visto.\
 Il dataset è composto complessivamente da sei file CSV, ma per questo progetto sono stati utilizzati:
-	users-score.csv: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191record). I campi utilizzati sono:
-	user_id: ID univoco dell'utente;
+	- `users-score.csv`: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191 record). I campi utilizzati sono:
+	○ user_id: ID univoco dell'utente;
 	anime_id: ID univoco dell’anime;
 	rating: valutazione data dall'utente (scala da 1 a 10);
-	anime-filtered.csv: Questo dataset contiene informazioni su diversi attributi e caratteristiche di ogni anime (basato su dati del 2020). Il dataset è comprensivo di 25 colonne ma ai fini dell’applicazione sono stati considerati i seguenti campi:
+	- `anime-filtered.csv`: Questo dataset contiene informazioni su diversi attributi e caratteristiche di ogni anime (basato su dati del 2020). Il dataset è comprensivo di 25 colonne ma ai fini dell’applicazione sono stati considerati i seguenti campi:
 	anime_id: ID univoco dell’anime;
 	Name: titolo dell’anime;
 	Score: valutazione media dell’anime;
@@ -19,7 +19,7 @@ Il dataset è composto complessivamente da sei file CSV, ma per questo progetto 
 	Episodes: numero di episodi dell’anime
 	Source: indica da dove è tratto l’anime (Manga, Original, ecc.)
 	Rating: classificazione dell’anime (G, PG-13, ecc.)
-	users-details-2023.csv: contiene i dati relativi agli utenti (731,290). I campi utilizzati sono:
+	- `users-details-2023.csv`: contiene i dati relativi agli utenti (731,290). I campi utilizzati sono:
 	Mal_id: ID univoco dell'utente (poi rinominato user_id);
 	Username: username dell’utente;
 Algortimo ALS
