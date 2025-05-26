@@ -39,7 +39,7 @@ Il dataset è composto complessivamente da sei file CSV, ma per questo progetto 
   - **user_id**: ID univoco dell'utente;
   - **anime_id**: ID univoco dell’anime;
   - **rating**: valutazione data dall'utente (scala da 1 a 10);
-- `anime-filtered.csv`: contiene informazioni su diversi attributi e caratteristiche di ogni anime (basato su dati del 2020). Il dataset è comprensivo di 25 colonne, ma ai fini dell’applicazione sono stati considerati i seguenti campi:
+- `anime-filtered.csv`: contiene informazioni su diversi attributi e caratteristiche di ogni anime, aggiornate al 2020. Il dataset è comprensivo di 25 colonne, ma ai fini dell’applicazione sono stati considerati i seguenti campi:
   - **anime_id**: ID univoco dell’anime;
   - **Name**: titolo dell’anime;
   - **Score**: valutazione media dell’anime;
@@ -47,14 +47,14 @@ Il dataset è composto complessivamente da sei file CSV, ma per questo progetto 
   - **synopsis**: una breve descrizione della trama dell’anime;
   - **Type**: indica se si tratta di un film, serie TV, ecc.;
   - **Episodes**: numero di episodi dell’anime;
-  - **Source**: indica da dove è tratto l’anime (Manga, Original, ecc.)
-  - **Rating**: classificazione dell’anime (G, PG-13, ecc.)
+  - **Source**: indica da dove è tratto l’anime (Manga, Original, ecc.);
+  - **Rating**: classificazione dell’anime (G, PG-13, ecc.);
 - `users-details-2023.csv`: contiene i dati relativi agli utenti (731,290). I campi utilizzati sono:
   - **Mal_id**: ID univoco dell'utente (poi rinominato **user_id**);
   - **Username**: username dell’utente;
 
 ## Algortimo ALS
-Per la generazione delle raccomandazioni basato sulle preferenze degli utenti è stato utilizzato l'algoritmo ALS (Alternating Least Squares) fornito dalla libreria PySpark.
+Per la generazione delle raccomandazioni sulla base dei voti espressi dagli utenti è stato utilizzato l'algoritmo ALS (Alternating Least Squares) fornito dalla libreria PySpark.
 
 L'algoritmo ALS è un metodo di machine learning ampiamente utilizzato per la generazione di raccomandazioni personalizzate, sfruttando la decomposizione di matrici sparse per identificare i fattori latenti che rappresentano le preferenze degli utenti e le caratteristiche degli elementi (nel caso specifico, anime). Ciò permette di comprendere le relazioni tra di essi.<br>
 Le fasi principali sono:
@@ -149,7 +149,7 @@ Prima di procedere alla configurazione di Hadoop, è necessario assicurarsi che 
          ```
          worker
          ```
-   - `/etc/hosts`: in entrambe le macchine virtuali, eliminare la riga `127.0.0.1 localhost` ed aggiungere:
+   - `/etc/hosts`: in entrambe le macchine virtuali ed aggiungere:
   
       ```
       ip-master    master
