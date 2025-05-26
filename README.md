@@ -69,10 +69,11 @@ Le fasi principali sono:
 Una volta ottenute le matrici *Utente* ed *Elemento*, la valutazione prevista per un utente rispetto ad un determinato elemento è calcolata come il prodotto scalare delle righe corrispondenti nelle due matrici. Infine, gli elementi raccomandati per un utente sono quelli con valutazione maggiore.
 
 ## Algoritmo di content-based filtering
-L’algoritmo di content-based filtering è una tecnica di raccomandazione personalizzata che si basa sull’analisi delle caratteristiche degli oggetti (in questo caso anime).
-L’algoritmo determina se due elementi sono simili tra di loro basandosi sul contenuto (feature) degli elementi stessi. L’implementazione scelta si basa sul calcolo della cosine similarity  (∑_i▒x_i  y_i)/(√(∑_i▒x_i^2 ) √(∑_i▒y_i^2 ))   
-• La cosine similarty non tiene conto della norma dei vettori e rappresenta l’angolo tra i essi.
- • Ha un range [-1, 1] dove 1 rappresenta vettori identici, -1 rappresenta vettori che puntano in direzioni diverse, e 0 indica vettori ortogonali (scorrelati).
+Il content-based filtering è una tecnica di raccomandazione personalizzata che si basa sull’analisi delle caratteristiche degli oggetti (in questo caso anime).
+Abbiamo implementato un algoritmo di content based filtering che stabilisce la similarità tra due oggetti (anime) valutando la cosine similarity tra i due vettori che codificano le loro feature più rilevanti:
+cosine_similarity(A, B) = (A · B) / (||A|| * ||B||) = sum(A_i * B_i) / (sqrt(sum(A_i^2)) * sqrt(sum(B_i^2)))
+La cosine similarty misura semplicemente il coseno dell'angolo compreso tra i due vettori, senza tener conto della norma di questi ultimi.
+Il suo range è [-1, 1], dove 1 rappresenta vettori identici (a meno della norma), -1 rappresenta vettori che puntano in direzioni opposte, e 0 indica vettori ortogonali (scorrelati).
 
 ## Prerequisiti
 In questa sezione sono elencati i prerequisiti software necessari per l'esecuzione del sistema:
