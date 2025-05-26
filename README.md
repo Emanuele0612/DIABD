@@ -1,4 +1,4 @@
-# AnimeRecommender
+# AnimeRecommenderVis
 ![Testo Alternativo](./img/anime-intro.jpg)
 
 - [AnimeRecommender](#animerecommender)
