@@ -239,11 +239,11 @@ Dopo aver apportato le modifiche, è necessario formattare il filesystem HDFS:
 Per verificare la corretta configurazione:
 1. Avviare i servizi HDFS:
 ```
- $HADOOP_HOME/sbin/start-dfs.sh
+ $HADOOP_DIR/sbin/start-dfs.sh
  ```
 2. Avviare i servizi YARN:
 ```
- $HADOOP_HOME/sbin/start-yarn.sh
+ $HADOOP_DIR/sbin/start-yarn.sh
  ```
 ### Configurazioni file Spark 
 #### Solo master
