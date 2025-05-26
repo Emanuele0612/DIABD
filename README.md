@@ -28,14 +28,14 @@
 <div style="page-break-before: always;"></div>
 
 ## Obiettivo
-L'obiettivo principale del progetto è quello di creare un sistema di raccomandazione di anime efficiente e scalabile, in grado di fornire suggerimenti personalizzati agli utenti basati sulle loro preferenze e sulle caratteristiche degli anime stessi. A tale scopo sono state impiegate tecnologie per il calcolo distribuito (Hadoop e Spark) e Neo4j per la l’archiviazione e la visualizzazione dei dati su anime, utenti e loro relazioni risultanti dall’elaborazione.<br>
-Inoltre, per facilitare l'accesso e l'esplorazione dei dati, è stata sviluppata un'interfaccia grafica semplice ed intuitiva, che consenta a chiunque di interagire con i dati relativi ad utenti, anime e raccomandazioni, offrendo funzionalità di query del database predefinite ed eliminando la necessità di scrivere manualmente query Cypher.
+L'obiettivo principale del progetto è quello di creare un sistema di raccomandazione di anime efficiente e scalabile, in grado di fornire suggerimenti personalizzati agli utenti basati sulle loro preferenze e sulle caratteristiche degli anime stessi. A tale scopo sono state impiegate tecnologie per il calcolo distribuito (Hadoop e Spark), e Neo4j per la l’archiviazione e la visualizzazione dei dati su anime, utenti e loro relazioni risultanti dall’elaborazione.<br>
+Inoltre, per facilitare l'accesso e l'esplorazione dei dati, è stata sviluppata un'interfaccia grafica semplice ed intuitiva, che consenta a chiunque di interagire con le informazioni relative ad utenti, anime e raccomandazioni, offrendo funzionalità di query del database predefinite ed eliminando la necessità di scrivere manualmente query Cypher.
 
 
 ## Dataset iniziale
-Il dataset utilizzato, disponibile al seguente [link](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset), comprende informazioni sugli anime, sugli utenti e sulle valutazioni date da questi utenti ad anime che hanno visto.\
+Il dataset utilizzato, disponibile al seguente [link](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset), comprende informazioni relative agli anime e agli utenti e le valutazioni che questi ultimi hanno attribuito agli anime che hanno visto.<br>
 Il dataset è composto complessivamente da sei file CSV, ma per questo progetto sono stati utilizzati:
-- `users-score.csv`: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191 record). Di questo sono stati utilizzati i campi:
+- `users-score.csv`: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191 record). A causa delle eccessive dimensioni, spropositate rispetto all'infrastruttura di calcolo a disposizione, tale dataset è stato sottocampionato di un fattore 100. Di questo sono stati utilizzati i campi:
   - **user_id**: ID univoco dell'utente;
   - **anime_id**: ID univoco dell’anime;
   - **rating**: valutazione data dall'utente (scala da 1 a 10);
