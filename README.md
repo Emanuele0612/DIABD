@@ -35,23 +35,23 @@ Inoltre, per facilitare l'accesso e l'esplorazione dei dati, è stata sviluppata
 ## Dataset iniziale
 Il dataset utilizzato, disponibile al seguente [link](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset), comprende informazioni sugli anime, sugli utenti e sulle valutazioni date da questi utenti ad anime che hanno visto.\
 Il dataset è composto complessivamente da sei file CSV, ma per questo progetto sono stati utilizzati:
-	- `users-score.csv`: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191 record). I campi utilizzati sono:
-		- user_id: ID univoco dell'utente;
-		- anime_id: ID univoco dell’anime;
-		- rating: valutazione data dall'utente (scala da 1 a 10);
-	- `anime-filtered.csv`: Questo dataset contiene informazioni su diversi attributi e caratteristiche di ogni anime (basato su dati del 2020). Il dataset è comprensivo di 25 colonne ma ai fini dell’applicazione sono stati considerati i seguenti campi:
-		- anime_id: ID univoco dell’anime;
-		- Name: titolo dell’anime;
-		- Score: valutazione media dell’anime;
-		- Genres: elenco dei generi dell’anime separati da " , ";
-		- Synopsis: una breve descrizione della trama dell’anime;
-		- Type: 
-		- Episodes: numero di episodi dell’anime
-		- Source: indica da dove è tratto l’anime (Manga, Original, ecc.)
-		- Rating: classificazione dell’anime (G, PG-13, ecc.)
-	- `users-details-2023.csv`: contiene i dati relativi agli utenti (731,290). I campi utilizzati sono:
-		- Mal_id: ID univoco dell'utente (poi rinominato user_id);
-		- Username: username dell’utente;
+- `users-score.csv`: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191 record). Di questo sono stati utilizzati i campi:
+  - **user_id**: ID univoco dell'utente;
+  - **anime_id**: ID univoco dell’anime;
+  - **rating**: valutazione data dall'utente (scala da 1 a 10);
+- `anime-filtered.csv`: contiene informazioni su diversi attributi e caratteristiche di ogni anime (basato su dati del 2020). Il dataset è comprensivo di 25 colonne ma ai fini dell’applicazione sono stati considerati i seguenti campi:
+  - **anime_id**: ID univoco dell’anime;
+  - **Name**: titolo dell’anime;
+  - **Score**: valutazione media dell’anime;
+  - **Genres**: elenco dei generi dell’anime separati da ", ";
+  - **Synopsis**: una breve descrizione della trama dell’anime;
+  - **Type**: indica se si tratta di un film, serie TV, ecc.;
+  - **Episodes**: numero di episodi dell’anime;
+  - **Source**: indica da dove è tratto l’anime (Manga, Original, ecc.)
+  - **Rating**: classificazione dell’anime (G, PG-13, ecc.)
+- `users-details-2023.csv`: contiene i dati relativi agli utenti (731,290). I campi utilizzati sono:
+  - **Mal_id**: ID univoco dell'utente (poi rinominato **user_id**);
+  - **Username**: username dell’utente;
 Il dataset originale è stato sottocampionato di un fattore 100 a causa delle sue dimensioni eccessive, che ne rendevano impraticabile l'utilizzo, vista l'infrastruttura di calcolo a nostra disposizione.
 
 ## Algortimo ALS
