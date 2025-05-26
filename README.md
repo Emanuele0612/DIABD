@@ -101,7 +101,7 @@ Il sistema è composto da diversi componenti interconnessi che collaborano per f
 
 2. **Applicazione Spark**: gli obiettivi dell'applicazione Spark sono:
    1. creazione del modello ALS di raccomandazione di anime;
-   2. implementazione dell’algoritmo content-based filtering per il calcolo della similarità tra anime;
+   2. implementazione dell’algoritmo di content-based filtering per il calcolo della similarità tra anime;
    3. generazione delle raccomandazioni;
    4. caricamento dei dati nel database Neo4j.
    L'applicazione viene eseguita sul cluster Hadoop attraverso YARN e sfrutta il filesystem distribuito HDFS per l'accesso al dataset iniziale.
