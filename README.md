@@ -274,7 +274,7 @@ JAVA_HOME="path/to/java/dir"
 ```
 
 ### 1. Esecuzione dell'applicazione Spark
-Tutte le operazioni relative all'avvio del cluster Hadoop, caricamento del dataset in HDFS (presente nella cartella Backend/dataset), avvio di Spark e di Neo4j, necessarie per l'esecuzione dell'applicazione Spark, sono incluse nello script *Backend/1-start-create-recommendation.sh*. Per questo motivo, per avviare l'applicazione Spark, è sufficiente eseguire lo script *Backend/1-start-create-recommendation.sh*.
+Tutte le operazioni relative all'avvio del cluster Hadoop, caricamento del dataset in HDFS (da scaricare al link indicato sopra), avvio di Spark e di Neo4j, necessarie per l'esecuzione dell'applicazione Spark, sono incluse nello script *Backend/1-start-create-recommendation.sh*. Per questo motivo, per avviare l'applicazione Spark, è sufficiente eseguire lo script *Backend/1-start-create-recommendation.sh*.
 
 L'esecuzione dell'applicazione Spark (contenuta nel notebook *Backend/create-recommendation.ipynb*) permette di popolare il database Neo4j con le raccomandazioni calcolate in modo permanente, per questo è suffciente eseguirla solo al primo avvio del sistema.
 ### 2. Avvio dell'applicazione web
