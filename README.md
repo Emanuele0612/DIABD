@@ -109,7 +109,7 @@ L'applicazione viene eseguita sul cluster Hadoop attraverso YARN e sfrutta il fi
 3. **Database Neo4j**: usato per l'archiviazione dei dati originali, delle raccomandazioni generate dal modello ALS e dei coefficienti di similarità calcolati dall’algoritmo di content-based filtering.
    - Facilita l'analisi delle relazioni tra utenti e anime.
 
-4. **Applicazione web**: fornisce un'interfaccia utente semplice per esplorare le raccomandazioni e le relazioni tra utenti e anime in modo visuale, attraverso query predefinite. È stata sviluppata con le classiche tecnologie web: HTML, CSS e JavaScript e si compone dei seguenti file:
+4. **Applicazione web**: fornisce un'interfaccia utente semplice per esplorare le raccomandazioni e le relazioni tra utenti e anime e similarità tra anime in modo visuale, attraverso query predefinite. È stata sviluppata con le classiche tecnologie web: HTML, CSS e JavaScript e si compone dei seguenti file:
 	- `index.html`: punto d'accesso all'applicazione in cui è definita la struttura di base dell'interfaccia grafica, oltre che includere riferimenti a file JavaScript e CSS;
    	- `style.css`: è il file di styling del'interfaccia grafica;
 	- `config.js`: contiene la configurazione per NeoVis e quella del driver usato per l'accesso a Neo4j.
@@ -119,7 +119,7 @@ L'applicazione viene eseguita sul cluster Hadoop attraverso YARN e sfrutta il fi
 	- `functionality.js`: contiene una funzione JavaScript per ogni funzionalità, cioè per ogni possibile query al database Neo4j offerta dall'applicazione.
 
 ### Funzionamento
-AnimeRecommender funziona attraverso un flusso di lavoro ben definito che coinvolge i diversi componenti come segue:
+AnimeRecommenderVis funziona segue un preciso flusso di lavoro:
 1. **Caricamento del dataset di partenza in HDFS**: Il dataset viene caricato nel filesystem distribuito HDFS del cluster Hadoop.
 2. **Esecuzione dell'applicazione Spark**: l'applicazione Spark si compone dei seguenti step:
    1. Lettura del dataset di partenza da HDFS;
