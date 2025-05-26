@@ -158,7 +158,7 @@ Prima di procedere alla configurazione di Hadoop, è necessario assicurarsi che 
       ```
       **NOTA**: sostituire `ip-master` e `ip-worker` con gli indirizzi IP corrispondenti.
 
-3. **Connessione tramite SSH**: per consente al master di accedere ai worker senza dover inserire manualmente la password.
+3. **Connessione tramite SSH**: per consentire al master di accedere ai worker senza dover inserire manualmente la password.
    - sul nodo **master**:
      1. `ssh-keygen`: per generare le chiavi;
      2. `ssh-copy-id user@worker`: per copiare la chiave pubblica sul nodo worker;
