@@ -126,8 +126,8 @@ AnimeRecommender funziona attraverso un flusso di lavoro ben definito che coinvo
    2. Esplorazione e analisi del dataset: prevede l'esecuzione delle analisi preliminari sul dataset per comprendere meglio le caratteristiche dei dati, filtrarli e pulirli se necessario;
    3. Split del dataset in training e test, il primo utilizzato per addestrare il modello e il secondo per valutarne le prestazioni;
    4. Generazione del modello di raccomandazione:
-	- il modello viene creato utilizzando l'algoritmo ALS;
-	- è stata effettuata una cross-validation per trovare i parametri ottimali del modello.
+      - il modello viene creato utilizzando l'algoritmo ALS;
+      - è stata effettuata una cross-validation per trovare i parametri ottimali del modello.
    5. Validazione del modello utilizzando il set di test per verificare la sua accuratezza e capacità predittiva;
    6. Generazione delle raccomandazioni utilizzando il modello generato;
    7. Generazione dei coefficienti di similarità utilizzando l’algoritmo di content-based filtering
