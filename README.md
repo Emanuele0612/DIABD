@@ -70,7 +70,7 @@ Una volta ottenute le matrici *Utente* ed *Elemento*, la valutazione prevista pe
 
 ## Algoritmo di content-based filtering
 Il content-based filtering è una tecnica di raccomandazione personalizzata che si basa sull’analisi delle caratteristiche degli oggetti (in questo caso anime).
-Abbiamo implementato un algoritmo di content based filtering che stabilisce la similarità tra due oggetti (anime) valutando la cosine similarity tra i due vettori che codificano le loro feature più rilevanti:
+Abbiamo implementato un algoritmo di content based filtering che stabilisce la similarità tra due oggetti (anime) valutando la cosine similarity tra i due vettori che codificano le loro feature più rilevanti:<br>
 cosine_similarity(A, B) = (A · B) / (||A|| * ||B||) = sum(A_i * B_i) / (sqrt(sum(A_i^2)) * sqrt(sum(B_i^2)))
 La cosine similarty misura semplicemente il coseno dell'angolo compreso tra i due vettori, senza tener conto della norma di questi ultimi.
 Il suo range è [-1, 1], dove 1 rappresenta vettori identici (a meno della norma), -1 rappresenta vettori che puntano in direzioni opposte, e 0 indica vettori ortogonali (scorrelati).
