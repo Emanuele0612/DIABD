@@ -44,7 +44,7 @@ Il dataset è composto complessivamente da sei file CSV, ma per questo progetto 
   - **Name**: titolo dell’anime;
   - **Score**: valutazione media dell’anime;
   - **Genres**: elenco dei generi dell’anime separati da ", ";
-  - **Synopsis**: una breve descrizione della trama dell’anime;
+  - **synopsis**: una breve descrizione della trama dell’anime;
   - **Type**: indica se si tratta di un film, serie TV, ecc.;
   - **Episodes**: numero di episodi dell’anime;
   - **Source**: indica da dove è tratto l’anime (Manga, Original, ecc.)
