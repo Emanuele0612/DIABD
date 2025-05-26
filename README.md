@@ -150,7 +150,7 @@ Prima di procedere alla configurazione di Hadoop, è necessario assicurarsi che 
          ```
          worker
          ```
-   - `/etc/hosts`: in entrambe le macchine virtuali ed aggiungere:
+   - `/etc/hosts`: in entrambe le macchine virtuali aggiungere:
   
       ```
       ip-master    master
