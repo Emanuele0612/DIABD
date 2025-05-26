@@ -35,7 +35,7 @@ Inoltre, per facilitare l'accesso e l'esplorazione dei dati, è stata sviluppata
 ## Dataset iniziale
 Il dataset utilizzato, disponibile al seguente [link](https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset), comprende informazioni relative agli anime e agli utenti e le valutazioni che questi ultimi hanno attribuito agli anime che hanno visto.<br>
 Il dataset è composto complessivamente da sei file CSV, ma per questo progetto sono stati utilizzati:
-- `users-score.csv`: contiene le valutazioni date dagli utenti (270,033) agli anime (24,325,191 record). A causa delle eccessive dimensioni, spropositate rispetto all'infrastruttura di calcolo a disposizione, tale dataset è stato sottocampionato di un fattore 100. Di questo sono stati utilizzati i campi:
+- `users-score.csv`: contiene le valutazioni date dagli utenti agli anime (24,325,191 record). A causa delle eccessive dimensioni, spropositate rispetto all'infrastruttura di calcolo a disposizione, tale dataset è stato sottocampionato di un fattore 100. Di questo sono stati utilizzati i campi:
   - **user_id**: ID univoco dell'utente;
   - **anime_id**: ID univoco dell’anime;
   - **rating**: valutazione data dall'utente (scala da 1 a 10);
