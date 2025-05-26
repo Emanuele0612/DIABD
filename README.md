@@ -5,7 +5,7 @@
   - [Obiettivo](#obiettivo)
   - [Dataset iniziale](#dataset-iniziale)
   - [Algortimo ALS](#algortimo-als)
-  - [Algoritmo di content-based filtering](#algoritmo-cbf)
+  - [Algoritmo di content-based filtering](#algoritmo-di-content-based-filtering)
   - [Prerequisiti](#prerequisiti)
   - [Architettura del sistema](#architettura-del-sistema)
     - [Funzionamento](#funzionamento)
