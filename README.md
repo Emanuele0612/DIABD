@@ -134,6 +134,7 @@ AnimeRecommender funziona attraverso un flusso di lavoro ben definito che coinvo
    7. Generazione dei coefficienti di similarità utilizzando l’algoritmo di content-based filtering
    8. Salvataggio dei dati in Neo4j: sia i dati originali che le raccomandazioni generate vengono importati nel database Neo4j.
 3. **Visualizzazione dati con l'applicazione web**: in seguito è mostrato un esempio:
+![Testo Alternativo](./img/webui.png) 
 
 ## Configurazione cluster Hadoop
 ### Connessione delle macchine virtuali
